@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f3f2e9;
+    color: #e60000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#game-container, #credits-page {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#logo-container, #logo-container-credits {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#home-logo, #credits-logo {
+    width: 300px;
+    cursor: pointer;
+}
+
+#background-music {
+    position: fixed;
+    top: 0; /* Move to the top of the screen */
+    left: 0; /* Move to the left side of the screen */
+    background-color: #f3f2e9;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+audio::-webkit-media-controls-panel {
+    background-color:  #f3f2e9;
+    color: #e60000;
+    border: #e60000;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-fullscreen-button {
+    background-color: #f3f2e9;
+    color: #e60000;
+}
+
+#credits-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #e60000;
+    color: #f3f2e9;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#credits-button:hover {
+    background-color: #c50000;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+#location-buttons {
+    margin-top: 20px;
+}
+
+#van-gif {
+    margin-top: 10px; /* Adjust the margin as needed */
+    width: 300px; /* Adjust the size as needed */
+}
+
+#kendrick-img {
+    width: 200px; /* Increase Kendrick's size */
+    margin-bottom: 20px; /* Space above the dialogue box */
+    position: absolute;
+    bottom: 110px; /* Adjust to match the position of the dialogue box */
+    left: 20px;
+}
+
+#dialogue-box {
+    background-color: #e60000;
+    color: #f3f2e9;
+    padding: 20px;
+    border: 2px solid #f3f2e9;
+    width: 80%;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Move to the far left corner */
+    margin-bottom: 0; /* No margin to keep it at the bottom */
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #e60000; /* Make the triangle longer */
+    position: absolute;
+    top: -40px; /* Adjust to match the new length of the triangle */
+    left: 20px;
+}
+
+.character-name {
+    margin: 0;
+}
+
+#dialogue-text {
+    margin: 10px 0 0 0;
+}
+
+#next-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f3f2e9;
+    color: #e60000;
+    border: 2px solid #e60000;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#next-button:disabled {
+    background-color: #a3a3a3;
+    cursor: not-allowed;
+}
+
+.location-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: #f3f2e9;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.location-button:hover {
+    background-color: #c50000;
+}
+
+#game {
+    margin-top: 20px;
+}
+
+#instructions {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff3e0;
+    border: 2px solid #e60000;
+    color: #e60000;
+    font-size: 16px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#score, #high-score, #timer {
+    margin: 10px;
+    font-size: 24px;
+}
+
+#game-area {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #e60000;
+    background-color: #f3f2e9;
+}
+
+.kid {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.distraction {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#credits-message {
+    background-color: #e60000;
+    color: #f3f2e9;
+    padding: 20px;
+    border: 2px solid #f3f2e9;
+    width: 60%; /* Make the box skinnier */
+    margin: 20px auto 0 auto; /* Move up and center */
+    text-align: left;
+    margin-top: 50px;
+    max-width: 600px; /* Ensure it doesn't get too wide */
+    min-height: 200px; /* Ensure it is long enough */
+}
+
+#drake-img {
+    width: 150px;
+    position: absolute;
+    bottom: 500px;
+    right: 20px;
+}
+
+#drake-dialogue-box {
+    background-color: #e60000;
+    color: #f3f2e9;
+    padding: 10px;
+    border: 2px solid #f3f2e9;
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    bottom: 520px;
+    right: 180px;
+}
+
+#drake-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e60000;
+    position: absolute;
+    bottom: 20px;
+    left: 210px;
+    transform: rotate(270deg); /* Rotate the triangle 90 degrees */
+}
+
+#drake-dialogue-text {
+    margin: 10px 0 0 0;
+}
+#game-over-message {
+    display: none;
+    background-color: #e60000;
+    color: #f3f2e9;
+    padding: 20px;
+    border: 2px solid #f3f2e9;
+    width: 60%; /* Adjust the size as needed */
+    margin: 20px auto; /* Center the message */
+    text-align: center;
+}
+
+#game-over-message p {
+    margin: 0 0 10px 0;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    background-color: #f3f2e9;
+    color: #e60000;
+    border: 2px solid #e60000;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}

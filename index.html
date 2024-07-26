@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Grahams LITE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <div id="game-container">
+        <div id="logo-container">
+            <img src="images/logo.png" alt="Logo" id="home-logo">
+        </div>
+        <audio controls autoplay loop id="background-music">
+            <source src="mtg.mp3" type="audio/mpeg">
+        </audio>
+        <button id="credits-button">Credits</button>
+        <div id="intro">
+            <div id="location-buttons">
+                <button class="location-button" data-location="toronto">Toronto</button>
+                <button class="location-button" data-location="atlanta">Atlanta</button>
+                <button class="location-button" data-location="houston">Houston</button>
+            </div>
+            
+            <img src="images/kendrick.png" alt="Kendrick" id="kendrick-img">
+            <div id="dialogue-box">
+                <div id="triangle"></div>
+                <p class="character-name">Kendrick:</p>
+                <p id="dialogue-text"></p>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+        <div id="game" style="display: none;">
+            <div id="instructions">
+                <p>Click on the kids as they appear to bring them to light. You have 30 seconds to find as many as you can!</p>
+            </div>
+            <div id="score">Score: 0</div>
+            <div id="high-score">High Score: 0</div>
+            <div id="timer">Time: 30</div>
+            <div id="game-area"></div>
+            <img src="images/drake.png" alt="Drake" id="drake-img">
+            <div id="drake-dialogue-box">
+                <div id="drake-triangle"></div>
+                <p class="character-name">Drake:</p>
+                <p id="drake-dialogue-text">Kids? Where are you?</p>
+            </div>
+        </div>
+    </div>
+    <div id="credits-page" style="display: none;">
+        <div id="credits-message">
+            <p>This game is a humorous reaction to the tasteful trend of K.Dot vs Drizzy games surfacing the internet.</p>
+            <p> No OvyHoes were harmed in the making of this game.</p>
+            <ul>Game Programming by Josh Nkan</ul>
+            <ul>Music by Josh Nkan</ul>
+            <ul>Character Designs by Josh Nkan</ul>
+            <p>Follow me on <a href="https://www.linkedin.com/in/joshua-nkan-79473421b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkwFh2TArRUqY9Y%2F8pzoxmg%3D%3D" target="_blank">LinkedIn</a>.</p>
+            <p>If you want to support my work, show love to my CashApp: $JNkan</p>
+            <p>Shoutout to Richie Branson who inspired this trend, and got the ball rolling.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
